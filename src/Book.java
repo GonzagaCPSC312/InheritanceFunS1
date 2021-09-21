@@ -34,4 +34,9 @@ public class Book extends Publication {
     public String toString() {
         return super.toString() + ", " + author;
     }
+
+    @Override
+    public String generateCopyright() {
+        return "TODO: to be implemented by Book";
+    }
 }

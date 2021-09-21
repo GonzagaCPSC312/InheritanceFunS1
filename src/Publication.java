@@ -34,4 +34,10 @@ public abstract class Publication {
     public String toString() {
         return title + ", " + publisher + ", " + numPages + ", " + price;
     }
+
+    // abstract method: a method with no body that must be overridden
+    // by a subclass
+    // let's say that all Publication subclasses must provide
+    // a copyright string
+    public abstract String generateCopyright();
 }
